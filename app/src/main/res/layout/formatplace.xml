@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="horizontal"
+    app:layout_marginBaseline="@dimen/material_emphasis_disabled">
+
+
+    <ImageView
+        android:id="@+id/ivPlace"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNamePlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/ivPlace"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Perro mono"/>
+    <TextView
+        android:id="@+id/tvTypeFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tvNamePlace"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamePlace"
+        tools:text="Comida rapida costena" />
+
+    <TextView
+        android:id="@+id/tvAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/tvTypeFood"
+        app:layout_constraintTop_toBottomOf="@+id/tvTypeFood"
+        tools:text="Calle 26 #7-14" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
