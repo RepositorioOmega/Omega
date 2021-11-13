@@ -11,7 +11,8 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="I ❤️  CREPE"
+        android:fontFamily="sans-serif"
+        android:text="○LA PUERTA FALSA○"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -43,24 +44,12 @@
 
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="17dp">
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="66dp"
+            android:layout_width="44dp"
             android:layout_height="match_parent">
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -96,18 +85,12 @@
             app:iconTint="#EFE9E9" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="25dp"
+            android:layout_width="64dp"
             android:layout_height="match_parent">
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="102dp">
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -116,7 +99,7 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="180"
+            android:layout_width="180dp"
             android:layout_height="28dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/horizontal" />
