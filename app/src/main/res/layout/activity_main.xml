@@ -29,9 +29,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="6dp"
-        android:text="El restaurante ocupa la planta baja del Casal organizado en dos comedores: El comedor Do Carrasca, con cabida para treinta comensales, nos ofrece posada al abrigo de su gran chimenea. El comedor Da Paloma está pensado para albergar pequeñas celebraciones o comidas de empresa, con una capacidad de hasta ochenta personas. Además dispone de proyector y pantalla lo que posibilita su utilización para presentaciones y eventos similares. ocina tradicional con toques de modernidad. "
+        android:text="La Puerta Falsa es un restaurante de tradición que tiene más de un siglo de trayectoria.  Se encuentra ubicado en una casona antigua, con arquitectura típica del Barrio La Candelaria, que permite recordar tiempos pasados.  Sus instalaciones no son grandes, constan de dos pisos, en el primer piso además de la zona de mesas, hay un mostrador en donde se aprecian preparaciones como cocadas que se ofrecen a los visitantes, en el segundo piso hay mesas de madera que van de acuerdo con la decoración del lugar, donde se puede disfrutar de su oferta gastronómica. "
         android:textAlignment="center"
-        android:translationY="5dp" />
+        android:translationY="5dp"
+        android:background="@drawable/back"/>
 
     <TextView
         android:id="@+id/textView3"
