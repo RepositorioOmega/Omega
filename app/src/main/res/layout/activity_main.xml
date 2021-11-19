@@ -8,11 +8,11 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/TituloRestaurante"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
-        android:text="○LA PUERTA FALSA○"
+        android:text="I ❤ CREPE"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -21,32 +21,137 @@
     <org.imaginativeworld.whynotimagecarousel.ImageCarousel
         android:id="@+id/carousel"
         android:layout_width="match_parent"
-        android:layout_height="174dp"
+        android:layout_height="250dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/DetalleRestaurante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="En este restaurante, sus clientes pueden tomar unas sabrosas tortitas. Su magnífico servicio te hará sentirte especial. Podría ser uno de esos lugares a los que regresar solo para disfrutar de su divina decoración otra vez."
+        android:textAlignment="center"
+        android:translationY="5dp" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="6dp"
-        android:text="La Puerta Falsa es un restaurante de tradición que tiene más de un siglo de trayectoria.  Se encuentra ubicado en una casona antigua, con arquitectura típica del Barrio La Candelaria, que permite recordar tiempos pasados.  Sus instalaciones no son grandes, constan de dos pisos, en el primer piso además de la zona de mesas, hay un mostrador en donde se aprecian preparaciones como cocadas que se ofrecen a los visitantes, en el segundo piso hay mesas de madera que van de acuerdo con la decoración del lugar, donde se puede disfrutar de su oferta gastronómica. "
-        android:textAlignment="center"
-        android:translationY="5dp"
-        android:background="@drawable/back"/>
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewUbicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            app:srcCompat="@drawable/ic_home_black_24dp"
+            app:tint="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/Ubicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Ubicación: "
+            android:textStyle="bold"
+            android:translationY="5dp" />
+
+        <TextView
+            android:id="@+id/Direccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Calle 8va Sur # 38a- 27(Ciudad Montes)"
+            android:textStyle="italic"
+            android:translationY="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_margin="6dp"
+            app:srcCompat="@android:drawable/stat_sys_speakerphone"
+            app:tint="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/Contacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Contacto: "
+            android:textStyle="bold"
+            android:translationY="5dp" />
+
+        <TextView
+            android:id="@+id/Numero"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="3508570003"
+            android:textStyle="italic"
+            android:translationY="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            app:srcCompat="@drawable/ic_notifications_black_24dp"
+            app:tint="@android:color/darker_gray" />/>
+
+        <TextView
+            android:id="@+id/Horario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Horario: "
+            android:textStyle="bold"
+            android:translationY="5dp" />
+
+        <TextView
+            android:id="@+id/Dias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Lunes - viernes (3:00PM - 9:30PM)
+                          Sábado - Domingo (1:00PM - 9:30PM)"
+            android:textStyle="italic"
+            android:translationY="5dp" />
+
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:text="restaurante@restaurante.com"
-        android:textAlignment="center"
-        android:textStyle="italic"
-        android:translationY="10dp" />
+        android:id="@+id/Platos"
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="Visualiza nuestros deliciosos platillos 😋"
+        android:textStyle="bold"
+        android:textColor="@color/rojito"
+        android:translationY="5dp" />
 
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:orientation="horizontal">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -61,7 +166,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="#FF0553"
-            android:text="¡Llámanos!"
+            android:text="¡Escribenos!"
             android:textColor="#EDEDED"
             android:textColorLink="#EDEDED"
             app:iconTint="#EFE9E9" />
@@ -100,6 +205,7 @@
 
         <ImageView
             android:id="@+id/imageView2"
+            android:layout_margin="20dp"
             android:layout_width="180dp"
             android:layout_height="28dp"
             android:layout_weight="1"
