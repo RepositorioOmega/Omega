@@ -30,4 +30,3 @@ class PlaceAdapter(val foodplace: List<FoodPlace>) :
         }
     }
 }
-

@@ -1,0 +1,27 @@
+[
+  {
+    "PlaceName": "Perro mono",
+    "Adress": "Calle 13",
+    "Description1":"Comida costena",
+    "ImgUrl": "https://dea154aeb528bee620f5-799733fd03b9298a9f65fee6178f3d08.ssl.cf1.rackcdn.com/pix_3_106230_243253287_5d238e801915a.jpg"
+
+  },
+  {
+    "PlaceName": "Bernard",
+    "Adress": "Carrera 16",
+    "Description1": "btudbald1@nonummyipsum.co.uk",
+    "imgUrl": "https://static.vecteezy.com/system/resources/previews/000/496/450/non_2x/vector-users-icon-design.jpg"
+  },
+  {
+    "PlaceName": "Kaleb",
+    "Adress": "Av 6",
+    "Description1": "knuccitelli2@uncsollicitudin.edu",
+    "imgUrl": "https://img2.freepng.es/20180405/cce/kisspng-computer-icons-icon-design-avatar-5ac66832d44b93.1745920615229522428696.jpg"
+  },
+  {
+    "PlaceName": "Bernard",
+    "Adress": "Cincunvalar 10",
+    "Description1": "btudbald1@nonummyipsum.co.uk",
+    "imgUrl": "https://static.vecteezy.com/system/resources/previews/000/496/450/non_2x/vector-users-icon-design.jpg"
+  }
+]
