@@ -24,7 +24,7 @@ class PlaceAdapter(val foodplace: List<FoodPlace>) :
     class PlaceHolder(val view: View) : RecyclerView.ViewHolder(view) {
         fun render(foodplace: FoodPlace) {
             view.tvNamePlace.text = foodplace.PlaceName
-            view.tvTypeFood.text = foodplace.TypeFood
+            view.tvDesc1place.text = foodplace.Description1
             view.tvAdress.text = foodplace.Adress
             Picasso.get().load(foodplace.ImgUrl).into(view.ivPlace)
         }
