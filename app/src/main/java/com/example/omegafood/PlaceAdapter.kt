@@ -18,7 +18,7 @@ class PlaceAdapter(
 ) : RecyclerView.Adapter<PlaceAdapter.PlaceFoodViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlaceFoodViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.formatplace, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_place, parent, false)
         return PlaceFoodViewHolder(view)
     }
 
@@ -32,10 +32,10 @@ class PlaceAdapter(
     }
 
     inner class PlaceFoodViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private var nameLabel: TextView = itemView.findViewById(R.id.textview_name)
+        private var nameLabel: TextView = itemView.findViewById(R.id.tvNamePlace)
         private var adressLabel: TextView = itemView.findViewById(R.id.tvAdress)
-        private var emailLabel: TextView = itemView.findViewById(R.id.textview_email)
-        private var imageView: ImageView = itemView.findViewById(R.id.imageview_thumb)
+        private var emailLabel: TextView = itemView.findViewById(R.id.tvEmail)
+        private var imageView: ImageView = itemView.findViewById(R.id.ivPlace)
         private var currentFoodPlace: FoodPlace? = null
 
         init {

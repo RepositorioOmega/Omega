@@ -30,7 +30,7 @@
         tools:text="Perro mono" />
 
     <TextView
-        android:id="@+id/tvDesc1place"
+        android:id="@+id/tvEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -38,7 +38,7 @@
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="@+id/tvNamePlace"
         app:layout_constraintTop_toBottomOf="@+id/tvNamePlace"
-        tools:text="Comida rapida costena" />
+        tools:text="Email" />
 
     <TextView
         android:id="@+id/tvAdress"
@@ -47,8 +47,8 @@
         android:layout_marginTop="12dp"
         android:textColor="#81201919"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/tvDesc1place"
-        app:layout_constraintTop_toBottomOf="@+id/tvDesc1place"
+        app:layout_constraintStart_toStartOf="@+id/tvEmail"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail"
         tools:text="Calle 26 #7-14" />
 
     <RatingBar
