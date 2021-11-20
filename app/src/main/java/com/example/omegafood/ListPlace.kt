@@ -1,5 +1,6 @@
 package com.example.omegafood
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -45,6 +46,14 @@ class ListPlace : AppCompatActivity() {
 
     private fun contactOnClick(foodPlace: FoodPlace) {
         Log.d(TAG, "Click on: $foodPlace")
+        foodPlace?.let {
+            navigateToDetail(it)
+        }
+    }
+
+    private fun navigateToDetail(foodPlace: FoodPlace) {
+        val intent = Intent(this, DetailPlace::class.java)
+        startActivity(intent)
     }
 
     private fun generatePlaceFood() {
