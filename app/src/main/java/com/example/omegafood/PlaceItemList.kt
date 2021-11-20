@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class PlaceItemList : AppCompatActivity() {
 
     val foodplaces = listOf(
         FoodPlace(

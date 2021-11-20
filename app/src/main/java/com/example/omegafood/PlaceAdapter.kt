@@ -5,14 +5,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.formatplace.view.*
+import kotlinx.android.synthetic.main.item_place.view.*
 
 class PlaceAdapter(val foodplace: List<FoodPlace>) :
     RecyclerView.Adapter<PlaceAdapter.PlaceHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlaceHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        return PlaceHolder(layoutInflater.inflate(R.layout.formatplace, parent, false))
+        return PlaceHolder(layoutInflater.inflate(R.layout.item_place, parent, false))
     }
 
     override fun onBindViewHolder(holder: PlaceHolder, position: Int) {
