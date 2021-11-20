@@ -59,5 +59,10 @@ class PlaceAdapter(
                 .load(foodPlace.imgUrl)
                 .into(imageView)
         }
+
+    }
+
+    companion object{
+        private const val TAG = "FoodAdapter"
     }
 }

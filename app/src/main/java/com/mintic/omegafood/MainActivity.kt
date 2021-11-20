@@ -1,5 +1,6 @@
 package com.mintic.omegafood
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -47,7 +48,22 @@ class MainActivity : AppCompatActivity() {
     /* RecyclerView item is clicked. */
     private fun contactOnClick(foodPlace: FoodPlace) {
         Log.d(TAG, "Click on: $foodPlace")
+        foodPlace?.let {
+            navigateToDetail(it)
+        }
     }
+
+    private fun navigateToDetail(foodPlace: FoodPlace) {
+        val intent = Intent(this, DetailActivity::class.java)
+        startActivity(intent)
+            //.apply {
+//            putExtra(KEY_NAME, foodPlace.PlaceName)
+//            putExtra(KEY_LAST_NAME, foodPlace.Adress)
+//            putExtra(KEY_CONTACT, foodPlace)
+        }
+
+        //startActivity(intent)
+//    }
 
     /**
      * Generates mock contact data to populate the UI from a JSON file in the
@@ -100,5 +116,8 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         private val TAG = MainActivity::class.java.simpleName
+//        const val KEY_NAME = "contact_extra_name"
+//        const val KEY_LAST_NAME = "contact_extra_last_name"
+//        const val KEY_CONTACT = "contact_extra"
     }
 }
