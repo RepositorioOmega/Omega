@@ -3,9 +3,10 @@ package com.example.omegafood
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
 
-class PlaceItemList : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     val foodplaces = listOf(
         FoodPlace(
@@ -82,7 +83,8 @@ class PlaceItemList : AppCompatActivity() {
         ),
 
         )
-
+    private lateinit var pAdapter: PlaceAdapter
+    private lateinit var recycler: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

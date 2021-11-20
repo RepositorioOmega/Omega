@@ -15,7 +15,7 @@
             android:name=".DetailPlace"
             android:exported="false" />
         <activity
-            android:name=".PlaceItemList"
+            android:name=".`MainActivity.kt`"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
