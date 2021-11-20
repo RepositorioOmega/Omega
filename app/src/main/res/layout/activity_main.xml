@@ -30,6 +30,17 @@
     </TableLayout>
 
     <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/madera" />
+
+    <ImageView
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,6 +71,7 @@
         android:fontFamily="sans-serif-medium"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        android:paddingTop="18dp"
         android:text="Waffle con sabor a fresa con una explosión de diversos sabores de helado acompañado de magia en chispas de colores y maní con salsa de chocolate."
         android:textAlignment="center"
         android:textColor="#494949"
@@ -219,18 +231,5 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="388dp" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="51dp"
-        android:layout_height="64dp"
-        android:background="#00FFFFFF"
-        android:text="Button"
-        app:icon="@android:drawable/ic_menu_myplaces"
-        app:iconTint="#FF0553"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.568"
-        tools:layout_editor_absoluteX="49dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
