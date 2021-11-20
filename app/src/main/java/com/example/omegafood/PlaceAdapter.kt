@@ -1,51 +1,65 @@
 package com.example.omegafood
 
 import android.content.Context
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.item_place.view.*
+import com.bumptech.glide.Glide
+import java.util.ArrayList
+
 
 class PlaceAdapter(
-    private val foodplace: List<FoodPlace>, private val context: Context,
-    private val onClick: (FoodPlace?) -> Unit
-) :
-    RecyclerView.Adapter<PlaceAdapter.PlaceHolder>() {
+    private val mFoodPlaces: ArrayList<FoodPlace>,
+    private val context: Context,
+    private val onClick: (FoodPlace) -> Unit
+) : RecyclerView.Adapter<PlaceAdapter.PlaceFoodViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlaceHolder {
-        val itemview = LayoutInflater.from(parent.context).inflate(R.layout.item_place, parent, false)
-        return PlaceHolder(itemview)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlaceFoodViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.formatplace, parent, false)
+        return PlaceFoodViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: PlaceHolder, position: Int) {
-        holder.render(foodplace[position])
+    override fun onBindViewHolder(holderPlaceFood: PlaceFoodViewHolder, position: Int) {
+        val foodPlace = mFoodPlaces[position]
+        holderPlaceFood.bind(foodPlace = foodPlace)
     }
 
-    override fun getItemCount(): Int = foodplace.size
+    override fun getItemCount(): Int {
+        return mFoodPlaces.size
+    }
 
-   inner class PlaceHolder(val view: View) : RecyclerView.ViewHolder(view) {
-        private var currentPlace: FoodPlace? = null
+    inner class PlaceFoodViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        private var nameLabel: TextView = itemView.findViewById(R.id.textview_name)
+        private var adressLabel: TextView = itemView.findViewById(R.id.tvAdress)
+        private var emailLabel: TextView = itemView.findViewById(R.id.textview_email)
+        private var imageView: ImageView = itemView.findViewById(R.id.imageview_thumb)
+        private var currentFoodPlace: FoodPlace? = null
 
         init {
-            view.setOnClickListener {
-                Log.d(TAG, "itemView OnClick")
-                onClick(currentPlace)
+            itemView.setOnClickListener {
+                currentFoodPlace?.let {
+                    onClick(it)
+                }
             }
         }
 
-        fun render(foodplace: FoodPlace) {
-            currentPlace = foodplace
-            view.tvNamePlace.text = foodplace.PlaceName
-            view.tvDesc1place.text = foodplace.Description1
-            view.tvAdress.text = foodplace.Adress
-            Picasso.get().load(foodplace.ImgUrl).into(view.ivPlace)
+        /* Bind Contact name and image. */
+        fun bind(foodPlace: FoodPlace) {
+            currentFoodPlace = foodPlace
+
+            //val fullName = "${foodPlace.PlaceName} ${foodPlace.Adress}"
+            adressLabel.text = foodPlace.Adress
+            nameLabel.text = foodPlace.PlaceName
+            emailLabel.text = foodPlace.Email
+
+            Glide.with(context)
+                .load(foodPlace.ImgUrl)
+                .into(imageView)
         }
     }
-    companion object{
-        private const val TAG = "PlaceAdapter"
-    }
 }
+
 
