@@ -3,16 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/DATAAGG/Movil/Rama_FeaturesListPOI/Omega/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
-        <entry key="..\:/DATAAGG/Movil/Rama_FeaturesListPOI/Omega/app/src/main/res/drawable/back2.xml" value="0.2203125" />
-        <entry key="..\:/DATAAGG/Movil/Rama_FeaturesListPOI/Omega/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
-        <entry key="..\:/DATAAGG/Movil/Rama_FeaturesListPOI/Omega/app/src/main/res/layout/activity_main.xml" value="0.5" />
-        <entry key="..\:/DATAAGG/Movil/Rama_FeaturesListPOI/Omega/app/src/main/res/layout/formatplace.xml" value="0.19429347826086957" />
-        <entry key="..\:/Users/mauro/Documents/Android Projects/OmegaFood/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2635416666666667" />
-        <entry key="..\:/Users/mauro/Documents/Android Projects/OmegaFood/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2635416666666667" />
-        <entry key="..\:/Users/mauro/Documents/Android Projects/OmegaFood/app/src/main/res/layout/activity_main.xml" value="0.23233695652173914" />
-        <entry key="..\:/Users/mauro/Documents/Android Projects/OmegaFood/app/src/main/res/layout/formatplace.xml" value="0.25" />
-        <entry key="..\:/Users/mauro/Documents/Android Projects/OmegaFood/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2635416666666667" />
+        <entry key="..\:/DATAAGG/Movil/Rama_FeaturesListPOI/Omega/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/DATAAGG/Movil/Rama_FeaturesListPOI/Omega/app/src/main/res/layout/formatplace.xml" value="0.1" />
+        <entry key="..\:/DATAAGG/Movil/teacher/AndroidExamplesKotlin/RecyclerView/app/src/main/res/drawable/back2.xml" value="0.2203125" />
+        <entry key="..\:/DATAAGG/Movil/teacher/AndroidExamplesKotlin/RecyclerView/app/src/main/res/layout/activity_main.xml" value="0.12771739130434784" />
+        <entry key="..\:/DATAAGG/Movil/teacher/AndroidExamplesKotlin/RecyclerView/app/src/main/res/layout/contact_list_item.xml" value="0.12771739130434784" />
+        <entry key="..\:/DATAAGG/Movil/teacher/AndroidExamplesKotlin/RecyclerView/app/src/main/res/layout/formatplace.xml" value="0.33" />
       </map>
     </option>
   </component>

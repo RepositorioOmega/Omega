@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/ivPlace"
+        android:id="@+id/imageview_thumb"
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_marginStart="10dp"
@@ -18,25 +18,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvNamePlace"
+        android:id="@+id/textview_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/ivPlace"
+        app:layout_constraintStart_toEndOf="@+id/imageview_thumb"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Perro mono" />
 
     <TextView
-        android:id="@+id/tvDesc1place"
-        android:layout_width="170dp"
-        android:layout_height="23dp"
+        android:id="@+id/textview_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvNamePlace"
-        app:layout_constraintTop_toBottomOf="@+id/tvNamePlace"
+        app:layout_constraintStart_toStartOf="@+id/textview_name"
+        app:layout_constraintTop_toBottomOf="@+id/textview_name"
         tools:text="Comida rapida costena" />
 
     <TextView
@@ -45,8 +45,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/tvDesc1place"
-        app:layout_constraintTop_toBottomOf="@+id/tvDesc1place"
+        app:layout_constraintStart_toStartOf="@+id/textview_email"
+        app:layout_constraintTop_toBottomOf="@+id/textview_email"
         tools:text="Calle 26 #7-14" />
 
     <RatingBar
