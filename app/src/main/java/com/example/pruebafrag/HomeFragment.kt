@@ -23,6 +23,9 @@ class HomeFragment : Fragment() {
     ): View? {
 
         // Inflate the layout for this fragment
+        binding.settingsButton.setOnClickListener { view : View ->
+            view.findNavController().navigate(R.id.action_homeFragment_to_settingsFragment)
+        }
 
         return inflater.inflate(R.layout.fragment_home, container, false)
 
