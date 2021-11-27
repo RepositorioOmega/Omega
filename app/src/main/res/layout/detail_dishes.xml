@@ -41,8 +41,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/madera"
-        tools:layout_editor_absoluteY="-298dp"
-        tools:ignore="MissingConstraints"/>
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-298dp" />
 
     <ImageView
         android:id="@+id/imageView2"
