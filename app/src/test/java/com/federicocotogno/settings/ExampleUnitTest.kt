@@ -1,4 +1,4 @@
-package com.example.pruebafrag
+package com.federicocotogno.settings
 
 import org.junit.Test
 

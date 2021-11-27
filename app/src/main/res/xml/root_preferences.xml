@@ -2,7 +2,7 @@
 
 
 
-    <PreferenceCategory app:title="Configuración"
+    <PreferenceCategory app:title="Configuration"
         app:icon="@drawable/ic_baseline_settings_24">
 
 
