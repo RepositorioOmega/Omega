@@ -3,22 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/format_place">
+    app:startDestination="@id/presentation">
 
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.mintic.omegafood.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
-    <fragment
-        android:id="@+id/activity_main"
-        android:name="com.mintic.omegafood.activity_main"
-        android:label="fragment_activity_main"
-        tools:layout="@layout/fragment_activity_main" >
-        <action
-            android:id="@+id/action_activity_main_to_format_place"
-            app:destination="@id/format_place" />
-    </fragment>
     <fragment
         android:id="@+id/format_place"
         android:name="com.mintic.omegafood.format_place"
@@ -33,4 +19,22 @@
         android:name="com.mintic.omegafood.detail_dish"
         android:label="fragment_detail_dish"
         tools:layout="@layout/fragment_detail_dish" />
+    <fragment
+        android:id="@+id/list2"
+        android:name="com.mintic.omegafood.list"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_list2_to_format_place"
+            app:destination="@id/format_place" />
+    </fragment>
+    <fragment
+        android:id="@+id/presentation"
+        android:name="com.mintic.omegafood.Presentation"
+        android:label="fragment_presentation"
+        tools:layout="@layout/fragment_presentation" >
+        <action
+            android:id="@+id/action_presentation_to_list2"
+            app:destination="@id/list2" />
+    </fragment>
 </navigation>
