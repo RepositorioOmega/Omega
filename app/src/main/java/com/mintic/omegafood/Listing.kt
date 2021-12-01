@@ -15,17 +15,8 @@ import org.json.JSONException
 import java.io.IOException
 import java.util.ArrayList
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [list.newInstance] factory method to
- * create an instance of this fragment.
- */
-class list : Fragment() {
+class Listing : Fragment() {
 
 
     override fun onCreateView(
@@ -65,6 +56,8 @@ class List : AppCompatActivity() {
                 DividerItemDecoration.VERTICAL
             )
         )
+
+
         mAdapter = PlaceAdapter(mFoodPlaces, this) { foodPlace ->
             contactOnClick(foodPlace)
         }

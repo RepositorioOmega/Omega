@@ -21,7 +21,7 @@
         tools:layout="@layout/fragment_detail_dish" />
     <fragment
         android:id="@+id/list2"
-        android:name="com.mintic.omegafood.list"
+        android:name="com.mintic.omegafood.Listing"
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" >
         <action
