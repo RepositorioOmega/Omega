@@ -1,5 +1,7 @@
 package com.example.omegafood
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.omegafood.databinding.DetailPlaceBinding
 import org.imaginativeworld.whynotimagecarousel.ImageCarousel
@@ -23,5 +25,12 @@ class DetailPlace : AppCompatActivity() {
         list.add(CarouselItem("https://blogger.googleusercontent.com/img/a/AVvXsEiey1RNE6yf4fXdociCZg019Z86JC0sPgmA8SZcIcoWgsTUkQjFeFScGNeYk_lgmfGq_8sBXhZ5QuFCmbC-Zx1YGc_zCe-mgufDZp6yz4q-PGqSYUhOAe_9bINsNIQH__JzOh741TdNcCltnN5xg0-ZJnyJIhPxLcGtnkp1w_Z8Q88JJOYF1Y5bI4_RMg=s320"))
         list.add(CarouselItem("https://blogger.googleusercontent.com/img/a/AVvXsEgjAlajaE4pN037CfVTiR66g6nnnExcteC1r8jqPkTh3ybmViy1bt8fVtWfr9c5EkFXc4xkrDNr7krhTDJ9LSc0Hj1588t86-Nym8GqpR5qd8hpToszkfDbZBxXGYDaSEmM6l0uq1J7HKEOsPGS5_VoWA3xNjYQsUGJrhG0ZY_B-F8FxYwUXzBZ1Rvg0w=s320"))
         carousel.addData(list)
+
+
+        val detailButton = findViewById<Button>(R.id.button)
+        detailButton.setOnClickListener {
+            val intent = Intent(this, DetailDishes::class.java)
+            startActivity(intent)
+        }
     }
 }
