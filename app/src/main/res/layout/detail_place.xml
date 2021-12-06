@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
@@ -149,65 +149,29 @@
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:orientation="horizontal">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="44dp"
-            android:layout_height="match_parent">
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="#FF0553"
-            android:text="¡Escribenos!"
-            android:textColor="#EDEDED"
-            android:textColorLink="#EDEDED"
-            app:iconTint="#EFE9E9" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="18dp"
-            android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/button"
-            android:layout_width="136dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="#FF0553"
-            android:text="¡Visitanos!"
+            android:gravity="center"
+            android:text="Menú"
             android:textColorHighlight="#FF437F"
             android:textColorLink="#0C0B0B"
-            app:iconTint="#EFE9E9" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="64dp"
-            android:layout_height="match_parent">
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+            app:iconTint="#EFE9E9"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_margin="20dp"
-            android:layout_width="180dp"
+            android:layout_width="match_parent"
             android:layout_height="28dp"
+            android:layout_margin="20dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/horizontal" />
     </LinearLayout>

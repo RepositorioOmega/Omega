@@ -1,0 +1,23 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <PreferenceCategory app:title="Configuration">
+
+
+        <SwitchPreference
+            app:key="notifications"
+            app:title="Notificaciones"
+            app:summaryOff="Activar las notficaciones"
+            app:summaryOn="Desactivar las notificaciones"/>
+        <SwitchPreference
+            app:key="sounds"
+            app:title="Sonidos"
+            app:summaryOff="Activar los sonidos"
+            app:summaryOn="Desactivar los sonidos"/>
+
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

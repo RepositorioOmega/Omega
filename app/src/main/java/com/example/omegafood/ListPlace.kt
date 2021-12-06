@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import androidx.recyclerview.widget.RecyclerView
 import java.io.IOException
 import java.util.ArrayList
@@ -28,6 +30,29 @@ class ListPlace : AppCompatActivity() {
         generatePlaceFood()
 
     }
+
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_settings -> {
+                val intent = Intent(
+                    this,
+                    SettingsActivity::class.java
+                )
+                startActivity(intent)
+            }
+        }
+
+        return super.onOptionsItemSelected(item)
+    }
+
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.bottom_nav_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+
 
     private fun setupRecyclerView() {
         mFoodPlaces = arrayListOf()

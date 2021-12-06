@@ -6,6 +6,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ListPlace">
 
+
+
     <TextView
         android:id="@+id/title_view"
         android:layout_width="match_parent"
