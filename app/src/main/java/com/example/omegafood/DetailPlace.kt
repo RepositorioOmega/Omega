@@ -1,6 +1,10 @@
 package com.example.omegafood
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.os.PersistableBundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.omegafood.databinding.DetailPlaceBinding
@@ -12,6 +16,19 @@ class DetailPlace : AppCompatActivity() {
     private val list = mutableListOf<CarouselItem>()
 
     private lateinit var binding: DetailPlaceBinding
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.location, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val gmmIntentUri = Uri.parse("geo:4.595671358980812, -74.10305625852968?q="+ Uri.parse("4.595671358980812, -74.10305625852968"))
+        val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
+        mapIntent.setPackage("com.google.android.apps.maps")
+        startActivity(mapIntent)
+        return super.onOptionsItemSelected(item)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
