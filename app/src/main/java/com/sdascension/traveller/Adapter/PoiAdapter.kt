@@ -58,6 +58,7 @@ class PoiAdapter(
             val intent = Intent(mContext, InfoActivity::class.java)
             intent.putExtra("title", poi.title)
             intent.putExtra("description", poi.description)
+            intent.putExtra("schedule", poi.schedule)
             intent.putExtra("completedesc", poi.completedesc)
             intent.putExtra("punctuation", poi.punctuation)
             intent.putExtra("image", poi.image)

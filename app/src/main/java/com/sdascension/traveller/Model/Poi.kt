@@ -8,6 +8,7 @@ import kotlinx.android.parcel.Parcelize
 data class Poi(
     val title: String,
     val description: String,
+    val schedule: String,
     val completedesc: String,
     val image: String,
     val punctuation: String,
