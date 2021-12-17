@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".pages.home.HomeFragment">
+
+        <RelativeLayout
+            android:id="@+id/imgCity"
+            android:layout_width="match_parent"
+            android:layout_height="264dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/horizontal">
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtDesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgCity"
+            android:text="@string/integrantes"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDesTitle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="
+                    * Miguel Angel Perez\n
+                    * Juan Sebastián Lindo\n
+                    * Mauricio Rivas Palacio\n
+                    * Jasmin Fuquen\n
+                    * Andres Garcia"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</ScrollView>
