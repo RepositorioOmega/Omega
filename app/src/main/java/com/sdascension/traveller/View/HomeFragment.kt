@@ -1,4 +1,4 @@
-package com.sdascension.traveller.pages.home
+package com.sdascension.traveller.View
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.sdascension.traveller.databinding.FragmentHomeBinding
+import com.sdascension.traveller.ViewModel.HomeViewModel
 
 // Home Fragment Binding - DON'T CHANGE
 class HomeFragment : Fragment() {

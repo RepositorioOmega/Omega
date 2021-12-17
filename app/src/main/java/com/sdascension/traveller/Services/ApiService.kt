@@ -1,5 +1,6 @@
-package com.sdascension.traveller.pages.poi
+package com.sdascension.traveller.Services
 
+import com.sdascension.traveller.Model.Poi
 import retrofit2.Call
 import retrofit2.http.GET
 

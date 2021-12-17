@@ -7,7 +7,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".pages.home.HomeFragment">
+        tools:context=".View.HomeFragment">
 
         <ImageView
             android:id="@+id/imgInfo"

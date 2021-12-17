@@ -1,4 +1,4 @@
-package com.sdascension.traveller.pages.home
+package com.sdascension.traveller.ViewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

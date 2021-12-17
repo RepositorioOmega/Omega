@@ -1,14 +1,13 @@
-package com.sdascension.traveller.pages.poi
+package com.sdascension.traveller.ViewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class PoiViewModel : ViewModel() {
+class InfoViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is poi Fragment"
+        value = "This is info Fragment"
     }
     val text: LiveData<String> = _text
-
 }

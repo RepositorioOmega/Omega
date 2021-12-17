@@ -1,4 +1,4 @@
-package com.sdascension.traveller.pages.poi
+package com.sdascension.traveller.Model
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

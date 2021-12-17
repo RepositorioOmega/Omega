@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.sdascension.traveller.pages.home.HomeFragment"
+        android:name="com.sdascension.traveller.View.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home">
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/nav_poi"
-        android:name="com.sdascension.traveller.pages.poi.PoiFragment"
+        android:name="com.sdascension.traveller.View.PoiFragment"
         android:label="@string/menu_poi"
         tools:layout="@layout/fragment_poi">
         <action
@@ -27,7 +27,7 @@
 
     <activity
         android:id="@+id/nav_info"
-        android:name="com.sdascension.traveller.pages.info.InfoActivity"
+        android:name="com.sdascension.traveller.View.InfoActivity"
         android:label="@string/menu_info"
         tools:layout="@layout/activity_info" />
 </navigation>

@@ -1,9 +1,10 @@
-package com.sdascension.traveller
+package com.sdascension.traveller.View
 
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceFragmentCompat
+import com.sdascension.traveller.R
 
 // Activity for settings
 class SettingsActivity : AppCompatActivity() {

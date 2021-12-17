@@ -1,4 +1,4 @@
-package com.sdascension.traveller.pages.poi
+package com.sdascension.traveller.View
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,9 +9,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.sdascension.traveller.Adapter.PoiAdapter
+import com.sdascension.traveller.Model.Poi
 import com.sdascension.traveller.R
 import com.sdascension.traveller.databinding.FragmentPoiBinding
-import com.sdascension.traveller.pages.info.InfoActivity
+import com.sdascension.traveller.ViewModel.PoiViewModel
+import com.sdascension.traveller.Services.ApiService
 import kotlinx.android.synthetic.main.fragment_poi.view.*
 import retrofit2.Call
 import retrofit2.Callback

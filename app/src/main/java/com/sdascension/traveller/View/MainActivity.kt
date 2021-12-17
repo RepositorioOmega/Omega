@@ -1,4 +1,4 @@
-package com.sdascension.traveller
+package com.sdascension.traveller.View
 
 import android.content.Intent
 import android.os.Bundle
@@ -13,8 +13,8 @@ import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.sdascension.traveller.R
 import com.sdascension.traveller.databinding.ActivityMainBinding
-import com.sdascension.traveller.pages.authentication.Login
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_poi.*

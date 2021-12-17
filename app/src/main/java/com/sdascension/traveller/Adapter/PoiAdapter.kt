@@ -1,4 +1,4 @@
-package com.sdascension.traveller.pages.poi
+package com.sdascension.traveller.Adapter
 
 import android.content.Context
 import android.content.Intent
@@ -8,8 +8,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.sdascension.traveller.Model.Poi
 import com.sdascension.traveller.R
-import com.sdascension.traveller.pages.info.InfoActivity
+import com.sdascension.traveller.View.InfoActivity
 import com.squareup.picasso.Picasso
 
 // Adapter for Poi Recycler View

@@ -18,7 +18,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".pages.poi.PoiMapActivity"
+            android:name=".View.PoiMapActivity"
             android:exported="false"
             android:label="@string/title_activity_poi_map" />
         <activity
@@ -28,18 +28,18 @@
             android:name=".pages.authentication.Login"
             android:exported="true" />
         <activity
-            android:name=".pages.info.InfoActivity"
+            android:name=".View.InfoActivity"
             android:exported="true"
             android:label="Information"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".View.MainActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".View.MainActivity" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".View.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Proyecto.NoActionBar">
@@ -50,11 +50,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SettingsActivity"
+            android:name=".View.SettingsActivity"
             android:exported="false"
             android:label="@string/title_activity_settings" />
         <activity
-            android:name=".MapFragment"
+            android:name=".View.MapFragment"
             android:exported="true"
             android:label="Cartagena" />
     </application>

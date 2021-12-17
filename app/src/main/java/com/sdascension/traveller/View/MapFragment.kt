@@ -1,4 +1,4 @@
-package com.sdascension.traveller
+package com.sdascension.traveller.View
 
 import android.os.Bundle
 import android.view.MenuItem
@@ -9,6 +9,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.sdascension.traveller.R
 
 // THIS GOOGLE MAP FRAGMENT IS FOR HOME, TO LOCATE THE CITY SELECTED
 class MapFragment : AppCompatActivity(), OnMapReadyCallback {

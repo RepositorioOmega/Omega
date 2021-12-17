@@ -1,4 +1,4 @@
-package com.sdascension.traveller.pages.poi
+package com.sdascension.traveller.View
 
 import android.os.Bundle
 import android.view.MenuItem
