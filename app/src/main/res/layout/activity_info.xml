@@ -71,20 +71,9 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="25dp"
             android:layout_marginBottom="20dp"
-            android:backgroundTint="#FF0553"
+            android:backgroundTint="#c33c37"
             android:onClick="onLocateInfo"
             android:text="@string/ubicanos" />
-
-        <ImageView
-            android:id="@+id/LogoEquipo"
-            android:layout_width="match_parent"
-            android:layout_height="28dp"
-            android:layout_margin="20dp"
-            android:layout_below="@id/infoLocation"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/horizontal" />
 
     </RelativeLayout>
 </ScrollView>

@@ -37,7 +37,7 @@ class PoiFragment : Fragment() {
 
         // Use of retrofit library for the api response
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://api.npoint.io/db1e1579382df87cf909/")
+            .baseUrl("https://my-json-server.typicode.com/RepositorioOmega/DB/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
         val api = retrofit.create(ApiService::class.java)
