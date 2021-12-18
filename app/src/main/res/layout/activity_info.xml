@@ -39,6 +39,32 @@
             android:textSize="20sp"/>
 
         <TextView
+            android:id="@+id/txtInfoSch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtInfoPunc"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/horarios"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/infoSchedule"
+            android:layout_toEndOf="@id/txtInfoSch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtInfoPunc"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
             android:id="@+id/txtInfoPunc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,6 +72,7 @@
             android:layout_centerVertical="true"
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
+
             android:text="@string/puntuacion"
             android:textColor="@color/blue"
             android:textSize="20sp"
@@ -57,7 +84,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
             android:textSize="20sp"
             android:layout_below="@+id/infoDescription"
             android:layout_toEndOf="@+id/txtInfoPunc" />
@@ -67,7 +95,7 @@
             android:id="@+id/infoLocation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/infoPunctuation"
+            android:layout_below="@id/infoSchedule"
             android:layout_marginStart="20dp"
             android:layout_marginTop="25dp"
             android:layout_marginBottom="20dp"

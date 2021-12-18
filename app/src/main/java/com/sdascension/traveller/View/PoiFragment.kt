@@ -56,7 +56,7 @@ class PoiFragment : Fragment() {
             }
 
             override fun onFailure(call: Call<List<Poi>>, t: Throwable) {
-                d("kevin", "onFailure")
+                d("jasmin", "onFailure")
             }
         })
         poiViewModel =

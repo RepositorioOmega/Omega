@@ -23,6 +23,7 @@ class InfoActivity : AppCompatActivity() {
         val intent = intent
         val title = intent.getStringExtra("title")
         val completedesc = intent.getStringExtra("completedesc")
+        val schedule = intent.getStringExtra("schedule")
         val punctuation = intent.getStringExtra("punctuation")
         val image = intent.getStringExtra("image")
 
@@ -30,6 +31,7 @@ class InfoActivity : AppCompatActivity() {
         infoTitle.text = title
         infoDescription.text = completedesc
         infoPunctuation.text = punctuation
+        infoSchedule.text = schedule
         Picasso.get()
             .load(image)
             .into(imgInfo)
