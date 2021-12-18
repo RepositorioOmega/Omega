@@ -54,10 +54,17 @@
         <entry key="..\:/android-sdk/Apps/Omega2/app/src/main/res/drawable/side_nav_bar_red.xml" value="0.3828125" />
         <entry key="..\:/android-sdk/Apps/Omega2/app/src/main/res/drawable/title_background.xml" value="0.3828125" />
         <entry key="..\:/android-sdk/Apps/Omega2/app/src/main/res/layout/activity_info.xml" value="0.36666666666666664" />
+        <entry key="..\:/android-sdk/Apps/Omega2/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/android-sdk/Apps/Omega2/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/android-sdk/Apps/Omega2/app/src/main/res/layout/activity_poi_map.xml" value="0.36666666666666664" />
         <entry key="..\:/android-sdk/Apps/Omega2/app/src/main/res/layout/activity_sign_up.xml" value="0.36666666666666664" />
         <entry key="..\:/android-sdk/Apps/Omega2/app/src/main/res/layout/app_bar_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/android-sdk/Apps/Omega2/app/src/main/res/layout/fragment_home.xml" value="0.3468354430379747" />
+        <entry key="..\:/android-sdk/Apps/Omega2/app/src/main/res/layout/fragment_map.xml" value="0.36666666666666664" />
+        <entry key="..\:/android-sdk/Apps/Omega2/app/src/main/res/layout/fragment_poi.xml" value="0.36666666666666664" />
+        <entry key="..\:/android-sdk/Apps/Omega2/app/src/main/res/layout/nav_header_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/android-sdk/Apps/Omega2/app/src/main/res/layout/poi.xml" value="0.36666666666666664" />
+        <entry key="..\:/android-sdk/Apps/Omega2/app/src/main/res/layout/settings_activity.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
